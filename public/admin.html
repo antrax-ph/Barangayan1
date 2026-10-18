@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fil">
+<head><meta charset="utf-8" /><title>Admin Panel</title><link rel="stylesheet" href="/style.css" /></head>
+<body class="admin-body">
+  <div class="admin-box" id="loginBox">
+    <h1>ADMIN LOGIN</h1><input id="au" placeholder="Username" /><input id="ap" type="password" placeholder="Password" />
+    <button id="loginBtn" class="danger" style="width:100%">LOGIN</button><p id="err" class="err"></p>
+  </div>
+  <div class="admin-box" id="panelBox" style="display:none">
+    <h1>ADMIN DASHBOARD</h1>
+    <h3>Give Resources</h3><label>Username</label><input id="g_user" placeholder="Player username" />
+    <div class="admin-grid">
+      <div><label>Pera</label><input id="g_pera" type="number" value="1000" /></div>
+      <div><label>Energiya</label><input id="g_en" type="number" value="1000" /></div>
+      <div><label>Kristal</label><input id="g_kristal" type="number" value="50" /></div>
+      <div><label>XP</label><input id="g_xp" type="number" value="500" /></div>
+    </div>
+    <button id="giveBtn" class="primary" style="width:100%">Give</button>
+    <hr style="border-color:#333; margin: 20px 0;" />
+    <h3>Broadcast Announcement</h3>
+    <label>Message</label><input id="a_msg" placeholder="Server restart in 5 mins!" />
+    <button id="announceBtn" class="primary" style="width:100%">Broadcast</button>
+    <p id="msg" class="err" style="color:#8ac96a"></p>
+  </div>
+  <script src="/admin.js"></script>
+</body>
+</html>
